@@ -1,0 +1,220 @@
+<html>
+<head>
+	<title>Add Data</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script type="text/javascript" src="http://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<style>
+			@media screen and (max-width:480px){
+				#search{width:80%;}
+				#search_btn{width:30%;float:right;margin-top:-32px;margin-right:10px;}
+			}
+			/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:150px;
+  }
+  test.jumbotron { min-height: 50px; }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+		</style>
+	</head>
+<body>
+ <!--<div class="jumbotron text-center">
+  <h1>SUPERTECH LTD</h1>
+  <p>We are specialize in sales in electronics products </p>
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="30" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">	
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">STUDENT MONOTORING SUSTEM</a>
+			</div>
+		<div class="collapse navbar-collapse" id="collapse">
+			<ul class="nav navbar-nav">
+				<li><a href='register.php'><span class="glyphicon glyphicon-home"></span>ADD ADMIN USER</a></li>
+				<li><a href='view.php'><span class="glyphicon glyphicon-modal-window"></span>VIEW AND ADD STUDENTS</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <p><br></p>
+      <p><br></p>
+</head>
+
+<body>
+	<a href="class.php"><span class="glyphicon glyphicon-book"></span> VIEW RECORDS BY CLASS</a>
+<p><br></p>
+  <a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a> | <a href="add.html"><span class="glyphicon glyphicon-pencil"></span>ADD NEW STUDENT</a> | <a href="logout.php"><span class="glyphicon glyphicon-user"></span>Logout</a>|<a href="search.php"><span class="glyphicon glyphicon-search"></span>SEARCH STUDENT</a>|<a href="sms.html"><span class="glyphicon glyphicon-envelope"></span>SMS CHECK</a>
+  <br/><br/>
+       <!--<h2 align="center" style="color:blue">ADD STUDENT IN DATABASE</h2>
+	<form action="add.php" method="post" name="form1" class="form-group">
+		<table width="25%" border="0" align="center" >
+		      <tr> 
+				<td>RFID CARD NUMBER </td>
+				<td><input type="text" name="card" required></td>
+			</tr>
+			<tr> 
+				<td>FIRST NAME</td>
+				<td><input type="text" name="fname" required ></td>
+			</tr>
+			<tr> 
+				<td>LAST NAME</td>
+				<td><input type="text" name="lname" required ></td>
+			</tr>
+			<tr> 
+				<td>CLASS</td>
+				<td><input type="text" name="class" required=""></td>
+			</tr>
+			<tr> 
+				<td>OPTION</td>
+				<td><input type="text" name="option" required=""></td>
+			</tr>
+			<tr> 
+				<td>SEX</td>
+				<td><input type="text" name="sex" placeholder="male/female" required=""></td>
+			</tr>
+			<tr> 
+				<td>DATE OF BIRTH</td>
+				<td><input type="text" name="date" required=""></td>
+			</tr>
+			<tr> 
+				<td>PARENTS NAMES</td>
+				<td><input type="text" name="parents" required=""></td>
+			</tr>
+			<tr> 
+				<td>PARENT ADRESS </td>
+				<td><input type="text" name="adress" required=""></td>
+			</tr>
+			<tr> 
+				<td>PARENT PHONE NUMBER</td>
+				<td><input type="text" name="number" required=""></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add"></td>
+			</tr>
+		</table>
+	</form>-->
+	<p><br></p>
+<div class="container">
+  <h2 align="center" style="color:blue">ADD STUDENT IN DATABASE</h2>
+  <form action="add.php" method="post" class="form-horizontal">
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="email">RFID CARD NUMBER:</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="card" name="card" placeholder="Enter card number" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="fnmae">FIRST NAME:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter first name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="pwd">LAST NAME:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter last name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="option">OPTION:</label>
+      <div class="col-sm-6"> 
+  <select name="agent_id" required>
+         <option value="">----select---</option>
+         <option value="1" name="1">ELECTRONICS</option>
+        <option  value="2" name="2">ELECTRICAL</option>
+        <option  value="3" name="3">CONSTRUCTION</option>
+        <option  value="4" name ="4">BIOMEDICAL</option>
+        
+  </select>         
+    <!--<input type="text" class="form-control" id="option" name="option" placeholder="Enter option">-->
+     </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="class">CLASS:</label>
+      <div class="col-sm-6">   
+      <select name="agent1_id" required>
+         <option value="">----select---</option>
+         <option value="1" name="1">S4</option>
+        <option  value="2" name="2">S5</option>
+        <option  value="3" name="3">S6</option>
+        
+        
+  </select>        
+      <!--  <input type="text" class="form-control" id="class" name="class" placeholder="Enter class">-->
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="pwd">SEX:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="sex" name="sex" placeholder="male or female">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="date">DATE OF BIRTH:</label>
+      <div class="col-sm-6">          
+        <input type="year" class="form-control" id="date" name="date" placeholder="Enter only year ">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="pwd">PARENT NAME:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="parents" name="parents" placeholder="Enter parent name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="parent">PARENT ADRESS:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="adress" name="adress" placeholder="Enter parent adress">
+      </div>
+    </div>
+    <div class="form-group">
+      <label style="color:blue" class="control-label col-sm-2" for="pwd">PARENT PHONE NUMBER:</label>
+      <div class="col-sm-6">          
+        <input type="text" class="form-control" id="number" name="number" placeholder="Enter parent phone number">
+      </div>
+    </div>
+    
+    <div class="form-group">          
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" id="submit" name="Submit"    class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+
